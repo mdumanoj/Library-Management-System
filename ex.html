@@ -1,0 +1,25 @@
+<html>
+<head>
+<script>
+
+	function add() {
+		var a= document.getElementById("a1").value;
+		var b= document.getElementById("b1").value;
+		if(a == "" || b=="") {
+			document.getElementById("cmd").innnerHTML="enter all necss fields";
+		}
+		else {
+			var c=a+b;
+			document.getElementById("cmd").innerHTML="Result is "+c;
+		}	
+	}
+</script>
+</head>
+<body>
+<input type="text" name="a" id="a1"/>
+<input type="text" name="b" id="b1"/>
+<button name="b1" onclick="add()">add</button>
+<div id="cmd">
+</div>
+</body>
+</html>
